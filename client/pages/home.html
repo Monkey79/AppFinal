@@ -2,11 +2,12 @@
 <section class="banner" ui-view>
     <div class="row banerRow">
         <div class="col-md-2 "></div>
+        
         <!--Banner SerchForm-->
         <div class="col-md-8  bannerCol">
             <article class="searchForm">
-                <form class="myForm">
-                    <input type="text" class="formInput">
+                <form class="myForm"  ng-submit="searchFormSubmitHndl()">
+                    <input type="text" class="formInput" ng-model="myKeyWord">
                     <button class="submmitBtn">Submit</button>
                 </form>
             </article>

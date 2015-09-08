@@ -17,7 +17,6 @@ app.get('/meliProxy', function(req, res) {
             res.json(myJson.results);
         }
     });
-
 });
 
 var server = app.listen(8045, function() {
